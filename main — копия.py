@@ -79,9 +79,28 @@ def main():
     triangle(0, -150, (150 / 2) * 2 ** 0.5, 'red', 'red')
     turtle.right(45)
     turtle.forward(150)
-    turtle.done()
 
 main()
+
+# one
+
+turtle.left(90)
+triangle(150,-150, 50, 'blue', 'blue')
+turtle.left(90)
+triangle(150,-150, 25, 'orange', 'orange')
+turtle.right(45)
+triangle(150,-175, 35.35 , 'red',  'red')
+turtle.left(135)
+paral(125, -200, 50)
+turtle.left(180)
+triangle(150, -250, 50, 'green', 'green')
+square(152,-250,25)
+turtle.left(180)
+triangle(100, -225, 25, 'purple', 'purple')
+
+turtle.done()
+
+
 
 
 
