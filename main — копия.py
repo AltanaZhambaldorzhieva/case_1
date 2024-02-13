@@ -17,7 +17,6 @@ def paral(x,y,a):
     turtle.forward(a / 2)
     turtle.right(135)
     turtle.end_fill()
-    turtle.done()
 
 def square(x, y, a):
     turtle.up()
@@ -34,7 +33,6 @@ def square(x, y, a):
     turtle.forward(a)
     turtle.right(90)
     turtle.end_fill()
-    turtle.done()
 
 def triangle(x, y, a, linecolor, color):
     turtle.up()
@@ -50,7 +48,7 @@ def triangle(x, y, a, linecolor, color):
     turtle.forward(a)
     turtle.end_fill()
     turtle.left(90)
-    turtle.done()
+
 
 def rombm(x, y, a):
     turtle.up()
@@ -68,3 +66,12 @@ def rombm(x, y, a):
     turtle.forward(a)
     turtle.right(135)
     turtle.end_fill()
+
+def main():
+    turtle.left(45)
+    triangle(0, 0, 150, 'pink', 'pink')
+    square(-200, 200, 180)
+    square(20, 200, 180)
+    square(20, -20, 180)
+    square(-200, -20, 180)
+    turtle.done()
