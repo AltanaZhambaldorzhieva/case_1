@@ -2,13 +2,11 @@
 # Zhambaldorzhieva A., Ryaguzova D., Zaytseva D.
 #
 import turtle
-turtle.speed(100)
+turtle.speed(1000)
 def triangle(x, y, a, linecolor, color):
     '''
-        Function, drawing square.
-        :param x: upper left corner coordinate x
-        :param y: upper left corner coordinate y
-        :param a: side length of a square
+        Function, drawing triangles.
+        :param a: side length of a triangles
         :return: None
     '''
     turtle.up()
@@ -25,8 +23,12 @@ def triangle(x, y, a, linecolor, color):
     turtle.end_fill()
     turtle.left(90)
     turtle.up()
-
-def paral(x,y,a):
+def paral(x, y, a):
+    '''
+            Function, drawing parallelograms.
+            :param a: side length of a parallelogram
+            :return: None
+    '''
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
@@ -34,16 +36,23 @@ def paral(x,y,a):
     turtle.begin_fill()
     turtle.forward(a / 2)
     turtle.left(135)
-    turtle.forward((a/2)*2**0.5)
+    turtle.forward((a / 2) * 2 ** 0.5)
     turtle.left(45)
     turtle.forward(a / 2)
     turtle.left(135)
-    turtle.forward((a/2)*2**0.55)
+    turtle.forward((a / 2) * 2 ** 0.55)
     turtle.left(45)
     turtle.end_fill()
     turtle.up()
 
 def square(x, y, a):
+    '''
+        Function, drawing square.
+        :param x: upper left corner coordinate x
+        :param y: upper left corner coordinate y
+        :param a: side length of a square
+        :return: None
+    '''
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
@@ -65,6 +74,7 @@ def main():
     Main function.
     :return: None
     '''
+#main figure
     triangle(0, 0, 150, 'pink', 'pink')
     turtle.left(90)
     triangle(0, 0, 150, 'blue', 'blue')
@@ -85,6 +95,7 @@ def main():
     triangle(0, -150, (150 / 2) * 2 ** 0.5, 'red', 'red')
     turtle.right(45)
     turtle.forward(150)
+#figure num1
     turtle.left(90)
     triangle(150, -150, 50, 'blue', 'blue')
     turtle.left(90)
@@ -98,6 +109,7 @@ def main():
     square(152, -250, 25)
     turtle.left(180)
     triangle(100, -225, 25, 'purple', 'purple')
+#figure num2
     square(20, 250, 40)
     turtle.right(135)
     triangle(78, 267, 80, 'orange', 'orange')
@@ -109,9 +121,8 @@ def main():
     triangle(-19, 358, 38, 'blue', 'blue')
     turtle.left(45)
     triangle(-90, 285, 100, 'green', 'green')
-    turtle.right(45)
-    turtle.forward(150)
-    turtle.right(135)
+#figure num3
+    turtle.right(90)
     triangle(-150, -150, 150 // 2, 'pink', 'pink')
     turtle.left(90)
     turtle.forward(150 // 2)
@@ -128,6 +139,7 @@ def main():
     turtle.right(180)
     triangle(-150 // 2, -150, 150 // 4, 'green', 'green')
     turtle.left(90)
+#figure num4
     turtle.forward(150 // 2)
     turtle.right(90)
     turtle.forward(150 // 2)
@@ -141,6 +153,7 @@ def main():
     turtle.forward(150 // 2)
     turtle.right(180)
     triangle(110, -150 - 150 // 2, 150 // 6, 'red', 'red')
+#figure mum5
     square(-200, 0, 150 // 2)
     turtle.forward(150 // 2)
     triangle(-200 - ((150 // 2) * (2 ** 0.5) // 2), ((150 // 2) * (2 ** 0.5) // 2), 150 // 6, 'blue', 'blue')
@@ -165,56 +178,59 @@ def main():
     turtle.forward(150 // 2)
     turtle.right(45)
     triangle(-250, 0, 150 // 6, 'pink', 'pink')
-    turtle.right(45)
+#figure num6
+    turtle.right(135)
     turtle.forward(150)
     turtle.forward(300)
     turtle.left(90)
-    square(200,0,50)
+    square(200, 0, 50)
     turtle.forward(50)
     turtle.right(180)
     turtle.forward(50)
     triangle(250, 50, 50, 'blue', 'blue')
     turtle.forward(50)
-    triangle(200,0,50, 'orange', 'orange')
+    triangle(200, 0, 50, 'orange', 'orange')
     turtle.left(90)
     turtle.forward(100)
     turtle.left(90)
-    paral(300,0,100)
+    paral(300, 0, 100)
     turtle.left(180)
-    triangle(300,0, 100, 'red', 'red')
+    triangle(300, 0, 100, 'red', 'red')
     turtle.forward(100)
     turtle.right(90)
-    square(300,(-100),50)
+    square(300, (-100), 50)
     turtle.right(90)
     turtle.forward(50)
-    triangle(300, (-50 ),50, 'pink', 'pink')
+    triangle(300, (-50), 50, 'pink', 'pink')
+#figure num7
     turtle.forward(200)
     turtle.right(45)
-    paral(300,200,100)
+    paral(300, 200, 100)
     turtle.left(135)
-    triangle(300,200,75,'purple','purple')
+    triangle(300, 200, 75, 'purple', 'purple')
     turtle.left(90)
     turtle.forward(75)
     turtle.left(90)
-    paral(300,125,75)
+    paral(300, 125, 75)
     turtle.left(180)
     turtle.forward(75)
     turtle.right(90)
     triangle(225, 125, 75, 'purple', 'purple')
     turtle.right(90)
-    triangle(225,125,75, 'pink', 'pink')
+    triangle(225, 125, 75, 'pink', 'pink')
     turtle.left(180)
     turtle.forward(75)
     turtle.right(90)
     turtle.forward(75)
     turtle.right(90)
-    square(150,275,75)
+    square(150, 275, 75)
     turtle.right(90)
     turtle.forward(75)
-    triangle(150,200,75,'orange','orange')
+    triangle(150, 200, 75, 'orange', 'orange')
     turtle.right(90)
-    triangle(150,200,75,'red', 'red')
-    turtle.right(180)
+    triangle(150, 200, 75, 'red', 'red')
+
     turtle.done()
+
 
 main()
