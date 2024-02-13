@@ -3,14 +3,30 @@
 #
 import turtle
 
+def triangle(x, y, a, linecolor, color):
+    '''
+            Function, drawing square.
+            :param x: upper left corner coordinate x
+            :param y: upper left corner coordinate y
+            :param a: side length of a square
+            :return: None
+    '''
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.color(linecolor, color)
+    turtle.begin_fill()
+    hyp = a * 2 ** 0.5
+    turtle.forward(a)
+    turtle.left(135)
+    turtle.forward(hyp)
+    turtle.left(135)
+    turtle.forward(a)
+    turtle.end_fill()
+    turtle.left(90)
+    turtle.done()
+
 def square(x, y, a):
-    '''
-        Function, drawing square.
-        :param x: upper left corner coordinate x
-        :param y: upper left corner coordinate y
-        :param a: side length of a square
-        :return: None
-    '''
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
@@ -44,22 +60,6 @@ def paral(x,y,a):
     turtle.end_fill()
     turtle.done()
 
-def triangle(x, y, a, linecolor, color):
-    turtle.up()
-    turtle.setposition(x, y)
-    turtle.down()
-    turtle.color(linecolor, color)
-    turtle.begin_fill()
-    hyp = a * 2 ** 0.5
-    turtle.forward(a)
-    turtle.left(135)
-    turtle.forward(hyp)
-    turtle.left(135)
-    turtle.forward(a)
-    turtle.end_fill()
-    turtle.left(90)
-    turtle.done()
-
 
 def main():
     '''
@@ -69,6 +69,7 @@ def main():
     square()
     paral()
     triangle()
+    turtle.done()
 
 
 if __name__ == '__main__':
