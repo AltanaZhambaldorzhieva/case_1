@@ -10,7 +10,7 @@ def square(x, y, a):
         :param y: upper left corner coordinate y
         :param a: side length of a square
         :return: None
-        '''
+    '''
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
