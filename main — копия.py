@@ -24,7 +24,7 @@ def square(x, y, a):
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
-    turtle.color('red', 'red')
+    turtle.color('yellow', 'yellow')
     turtle.begin_fill()
     turtle.forward(a)
     turtle.right(90)
@@ -52,5 +52,7 @@ def triangle(x, y, a, linecolor, color):
     turtle.end_fill()
     turtle.left(90)
     turtle.up()
+
+
 
 
