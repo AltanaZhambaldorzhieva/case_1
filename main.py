@@ -68,7 +68,6 @@ def main():
     square()
     paral()
     triangle()
-    rombm()
     turtle.done()
 
 
