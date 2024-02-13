@@ -52,6 +52,23 @@ def triangle(x, y, a, linecolor, color):
     turtle.left(90)
     turtle.done()
 
+def rombm(x, y, a):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.color('pink')
+    turtle.begin_fill()
+    turtle.left(45)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(135)
+    turtle.end_fill()
+
 
 paral(1,1,100)
 
