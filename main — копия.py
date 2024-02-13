@@ -17,6 +17,7 @@ def paral(x,y,a):
     turtle.forward(a / 2)
     turtle.right(135)
     turtle.end_fill()
+    turtle.up()
 
 
 def square(x, y, a):
@@ -34,6 +35,7 @@ def square(x, y, a):
     turtle.forward(a)
     turtle.right(90)
     turtle.end_fill()
+    turtle.up()
 
 def triangle(x, y, a, linecolor, color):
     turtle.up()
@@ -49,4 +51,6 @@ def triangle(x, y, a, linecolor, color):
     turtle.forward(a)
     turtle.end_fill()
     turtle.left(90)
+    turtle.up()
+
 
