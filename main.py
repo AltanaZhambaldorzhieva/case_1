@@ -30,7 +30,7 @@ def square(x, y, a):
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
-    turtle.color('red', 'red')
+    turtle.color('yellow', 'yellow')
     turtle.begin_fill()
     turtle.forward(a)
     turtle.right(90)
@@ -47,7 +47,7 @@ def paral(x,y,a):
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
-    turtle.color('purple')
+    turtle.color('dark blue')
     turtle.begin_fill()
     turtle.forward(a)
     turtle.right(45)
@@ -60,7 +60,6 @@ def paral(x,y,a):
     turtle.end_fill()
     turtle.done()
 
-
 def main():
     '''
     Main function.
@@ -69,6 +68,7 @@ def main():
     square()
     paral()
     triangle()
+    rombm()
     turtle.done()
 
 
