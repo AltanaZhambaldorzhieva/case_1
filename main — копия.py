@@ -54,5 +54,35 @@ def triangle(x, y, a, linecolor, color):
     turtle.up()
 
 
+def main():
+    '''
+    Main function.
+    :return: None
+    '''
+    triangle(0, 0, 150, 'pink', 'pink')
+    turtle.left(90)
+    triangle(0, 0, 150, 'blue', 'blue')
+    turtle.right(90)
+    square(0, 0, 150 // 2)
+    turtle.forward(150 // 2)
+    turtle.right(90)
+    triangle(150 // 2, 0, 150 // 2, 'orange', 'orange')
+    turtle.right(90)
+    turtle.forward(150 // 2)
+    triangle(0, 0, 150 // 2, 'green', 'green')
+    turtle.forward(150 // 2)
+    paral(-150 // 2, 0, 150)
+    turtle.forward(150 // 2)
+    turtle.left(135)
+    turtle.forward(2 * (150 / 2) * 2 ** 0.5)
+    turtle.left(90)
+    triangle(0, -150, (150 / 2) * 2 ** 0.5, 'red', 'red')
+    turtle.right(45)
+    turtle.forward(150)
+    turtle.done()
+
+main()
+
+
 
 
