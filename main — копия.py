@@ -2,7 +2,11 @@
 # Zhambaldorzhieva A., Ryaguzova D., Zaytseva D.
 #
 import turtle
-def paral(x,y,a):
+
+turtle.speed(1000)
+
+
+def paral(x, y, a):
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
@@ -10,11 +14,11 @@ def paral(x,y,a):
     turtle.begin_fill()
     turtle.forward(a / 2)
     turtle.left(135)
-    turtle.forward((a/2)*2**0.5)
+    turtle.forward((a / 2) * 2 ** 0.5)
     turtle.left(45)
     turtle.forward(a / 2)
     turtle.left(135)
-    turtle.forward((a/2)*2**0.55)
+    turtle.forward((a / 2) * 2 ** 0.55)
     turtle.left(45)
     turtle.end_fill()
     turtle.up()
@@ -36,6 +40,7 @@ def square(x, y, a):
     turtle.right(90)
     turtle.end_fill()
     turtle.up()
+
 
 def triangle(x, y, a, linecolor, color):
     turtle.up()
@@ -80,28 +85,37 @@ def main():
     turtle.right(45)
     turtle.forward(150)
 
+
 main()
 
 # one
 
 turtle.left(90)
-triangle(150,-150, 50, 'blue', 'blue')
+triangle(150, -150, 50, 'blue', 'blue')
 turtle.left(90)
-triangle(150,-150, 25, 'orange', 'orange')
+triangle(150, -150, 25, 'orange', 'orange')
 turtle.right(45)
-triangle(150,-175, 35.35 , 'red',  'red')
+triangle(150, -175, 35.35, 'red', 'red')
 turtle.left(135)
 paral(125, -200, 50)
 turtle.left(180)
 triangle(150, -250, 50, 'green', 'green')
-square(152,-250,25)
+square(152, -250, 25)
 turtle.left(180)
 triangle(100, -225, 25, 'purple', 'purple')
 
-turtle.done()
+# zero
 
-
-
-
+square(20, 250, 40)
+turtle.right(135)
+triangle(78, 267, 80, 'orange', 'orange')
+turtle.left(45)
+triangle(57, 323, 35, 'purple', 'purple')
+turtle.left(45)
+triangle(22, 358, 50, 'red', 'red')
+turtle.left(45)
+triangle(-19, 358, 38, 'blue', 'blue')
+turtle.left(45)
+triangle(-90, 285, 100, 'green', 'green')
 
 
