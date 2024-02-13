@@ -2,8 +2,7 @@
 # Zhambaldorzhieva A., Ryaguzova D., Zaytseva D.
 #
 import turtle
-
-def triangle(x, y, a, linecolor, color):
+def triangle(x, y, a):
     '''
             Function, drawing square.
             :param x: upper left corner coordinate x
@@ -13,7 +12,6 @@ def triangle(x, y, a, linecolor, color):
     '''
     turtle.up()
     turtle.setposition(x, y)
-    turtle.down()
     turtle.color(linecolor, color)
     turtle.begin_fill()
     hyp = a * 2 ** 0.5
@@ -29,7 +27,6 @@ def triangle(x, y, a, linecolor, color):
 def square(x, y, a):
     turtle.up()
     turtle.setposition(x, y)
-    turtle.down()
     turtle.color('yellow', 'yellow')
     turtle.begin_fill()
     turtle.forward(a)
@@ -46,7 +43,6 @@ def square(x, y, a):
 def paral(x,y,a):
     turtle.up()
     turtle.setposition(x, y)
-    turtle.down()
     turtle.color('dark blue')
     turtle.begin_fill()
     turtle.forward(a)
