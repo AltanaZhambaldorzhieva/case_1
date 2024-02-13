@@ -68,8 +68,3 @@ def rombm(x, y, a):
     turtle.forward(a)
     turtle.right(135)
     turtle.end_fill()
-
-
-paral(1,1,100)
-
-print('hello world')
