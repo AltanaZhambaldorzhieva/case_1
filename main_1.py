@@ -2,7 +2,7 @@
 # Zhambaldorzhieva A., Ryaguzova D., Zaytseva D.
 #
 import turtle
-turtle.speed(10)
+turtle.speed(100)
 def triangle(x, y, a, linecolor, color):
     '''
         Function, drawing square.
